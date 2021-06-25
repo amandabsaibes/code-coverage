@@ -38,8 +38,7 @@ jobs:
     # Run unit tests for the project
     - name: Run tests
       # TODO: Update the following to run unit tests for the project
-      run: |
-        echo "TODO: run unit tests"
+      run: mvn test
     # Determine if the JaCoCo coverage report file was generated
     - name: Check for JaCoCo coverage report
       id: report-exists
