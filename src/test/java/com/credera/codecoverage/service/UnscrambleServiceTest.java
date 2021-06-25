@@ -73,6 +73,11 @@ class UnscrambleServiceTest {
 
     @Test
     void unscramblesMatrix() {
-        // TODO: Update this unit test to increase code coverage to the unscramble service
+        final int[][] matrix = {{3, 3}, {6, 6}};
+       final String expectedLines = "==\n==";
+
+       String unscrabledMatrix = unscrambleService.unscramble(matrix);
+
+       assertEquals(unscrabledMatrix, expectedLines);
     }
 }
